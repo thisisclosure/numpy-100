@@ -674,17 +674,17 @@ I = [1,3,9,3,4,1]
 F = np.bincount(I,X)
 print(F)
 ```
-#### 66. Considering a (w,h,3) image of (dtype=ubyte), compute the number of unique colors (★★★)
+#### 66. Considering a (w,h,3) image of (dtype=ubyte), compute the number of unique colors (★★☆)
 
 
 ```python
-# Author: Nadav Horesh
+# Author: Fisher Wang
 
-w,h = 16,16
-I = np.random.randint(0,2,(h,w,3)).astype(np.ubyte)
-F = I[...,0]*256*256 + I[...,1]*256 +I[...,2]
-n = len(np.unique(F))
-print(np.unique(I))
+w, h = 256, 256
+I = np.random.randint(0, 4, (w, h, 3)).astype(np.ubyte)
+colors = np.unique(I.reshape(-1, 3), axis=0)
+n = len(colors)
+print(n)
 ```
 #### 67. Considering a four dimensions array, how to get sum over the last two axis at once? (★★★)
 
@@ -778,7 +778,7 @@ G = F.view( dtype=[('p0',F.dtype),('p1',F.dtype)] )
 G = np.unique(G)
 print(G)
 ```
-#### 74. Given an array C that is a bincount, how to produce an array A such that np.bincount(A) == C? (★★★)
+#### 74. Given a sorted array C that corresponds to a bincount, how to produce an array A such that np.bincount(A) == C? (★★★)
 
 
 ```python

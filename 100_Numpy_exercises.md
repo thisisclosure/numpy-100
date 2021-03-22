@@ -178,7 +178,7 @@ np.sqrt(-1) == np.emath.sqrt(-1)
 
 #### 65. How to accumulate elements of a vector (X) to an array (F) based on an index list (I)? (★★★)
 
-#### 66. Considering a (w,h,3) image of (dtype=ubyte), compute the number of unique colors (★★★)
+#### 66. Considering a (w,h,3) image of (dtype=ubyte), compute the number of unique colors (★★☆)
 
 #### 67. Considering a four dimensions array, how to get sum over the last two axis at once? (★★★)
 
@@ -194,7 +194,7 @@ np.sqrt(-1) == np.emath.sqrt(-1)
 
 #### 73. Consider a set of 10 triplets describing 10 triangles (with shared vertices), find the set of unique line segments composing all the  triangles (★★★)
 
-#### 74. Given an array C that is a bincount, how to produce an array A such that np.bincount(A) == C? (★★★)
+#### 74. Given a sorted array C that corresponds to a bincount, how to produce an array A such that np.bincount(A) == C? (★★★)
 
 #### 75. How to compute averages using a sliding window over an array? (★★★)
 
